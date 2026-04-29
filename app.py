@@ -13,11 +13,11 @@ with col1:
     n = st.number_input("Azot (N)", 0, 140, 50)
     p = st.number_input("Fosfor (P)", 0, 145, 50)
     k = st.number_input("Potasyum (K)", 0, 205, 50)
-    temp = st.number_input("Sıcaklık (°C)", 8.0, 45.0, 25.0)
+    temp = st.number_input("Sıcaklık (°C)", 0.0, 45.0, 25.0)
 with col2:
-    hum = st.number_input("Nem (%)", 14.0, 100.0, 70.0)
-    ph = st.number_input("pH Değeri", 3.5, 10.0, 6.5)
-    rain = st.number_input("Yağış (mm)", 20.0, 300.0, 100.0)
+    hum = st.number_input("Nem (%)", 0.0, 100.0, 70.0)
+    ph = st.number_input("pH Değeri", 0.0, 14.0, 6.5)
+    rain = st.number_input("Yağış (mm)", 0.0, 300.0, 100.0)
 
 if st.button("En Uygun Mahsulü Bul"):
     input_data = np.array([[n, p, k, temp, hum, ph, rain]])
