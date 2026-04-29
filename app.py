@@ -5,8 +5,8 @@ import numpy as np
 st.set_page_config(page_title="Akıllı Mahsul Tavsiye Sistemi", layout="centered")
 st.title("🌱 Akıllı Mahsul Tavsiye Sistemi")
 
-model = joblib.load('app/crop_model.pkl')
-le = joblib.load('app/label_encoder.pkl')
+model = joblib.load('crop_model.pkl')
+le = joblib.load('label_encoder.pkl')
 
 col1, col2 = st.columns(2)
 with col1:
