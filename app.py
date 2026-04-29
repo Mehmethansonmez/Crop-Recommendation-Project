@@ -23,4 +23,6 @@ if st.button("En Uygun Mahsulü Bul"):
     input_data = np.array([[n, p, k, temp, hum, ph, rain]])
     pred = model.predict(input_data)
     st.success(f"✅ Bu koşullar için en ideal mahsul: **{le.inverse_transform(pred)[0].upper()}**")
-print("Mehmethan SÖNMEZ")
+    
+st.markdown("---")
+st.caption("Created by Mehmethan SÖNMEZ")
